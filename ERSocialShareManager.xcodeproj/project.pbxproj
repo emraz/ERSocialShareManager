@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93AF81E92668960800B32EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF81E82668960800B32EE0 /* AppDelegate.swift */; };
+		93AF81EB2668960800B32EE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF81EA2668960800B32EE0 /* SceneDelegate.swift */; };
+		93AF81ED2668960800B32EE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF81EC2668960800B32EE0 /* ViewController.swift */; };
+		93AF81F02668960800B32EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AF81EE2668960800B32EE0 /* Main.storyboard */; };
+		93AF81F22668960C00B32EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AF81F12668960C00B32EE0 /* Assets.xcassets */; };
+		93AF81F52668960C00B32EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AF81F32668960C00B32EE0 /* LaunchScreen.storyboard */; };
+		93AF82002668960C00B32EE0 /* ERSocialShareManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF81FF2668960C00B32EE0 /* ERSocialShareManagerTests.swift */; };
+		93AF820B2668960C00B32EE0 /* ERSocialShareManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF820A2668960C00B32EE0 /* ERSocialShareManagerUITests.swift */; };
+		93AF8219266896AA00B32EE0 /* ERSocialShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF8218266896AA00B32EE0 /* ERSocialShareManager.swift */; };
+		93AF82202668B70B00B32EE0 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 93AF821F2668B70B00B32EE0 /* testVideo.mp4 */; };
+		93AF82242668E98100B32EE0 /* testImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93AF821D2668B6EE00B32EE0 /* testImg.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93AF81FC2668960C00B32EE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93AF81DD2668960800B32EE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93AF81E42668960800B32EE0;
+			remoteInfo = ERSocialShareManager;
+		};
+		93AF82072668960C00B32EE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93AF81DD2668960800B32EE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93AF81E42668960800B32EE0;
+			remoteInfo = ERSocialShareManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93AF81E52668960800B32EE0 /* ERSocialShareManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERSocialShareManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AF81E82668960800B32EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93AF81EA2668960800B32EE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		93AF81EC2668960800B32EE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93AF81EF2668960800B32EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93AF81F12668960C00B32EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93AF81F42668960C00B32EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93AF81F62668960C00B32EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93AF81FB2668960C00B32EE0 /* ERSocialShareManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ERSocialShareManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AF81FF2668960C00B32EE0 /* ERSocialShareManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERSocialShareManagerTests.swift; sourceTree = "<group>"; };
+		93AF82012668960C00B32EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93AF82062668960C00B32EE0 /* ERSocialShareManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ERSocialShareManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AF820A2668960C00B32EE0 /* ERSocialShareManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERSocialShareManagerUITests.swift; sourceTree = "<group>"; };
+		93AF820C2668960C00B32EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93AF8218266896AA00B32EE0 /* ERSocialShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERSocialShareManager.swift; sourceTree = "<group>"; };
+		93AF821D2668B6EE00B32EE0 /* testImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImg.jpg; sourceTree = "<group>"; };
+		93AF821F2668B70B00B32EE0 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93AF81E22668960800B32EE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AF81F82668960C00B32EE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AF82032668960C00B32EE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93AF81DC2668960800B32EE0 = {
+			isa = PBXGroup;
+			children = (
+				93AF81E72668960800B32EE0 /* ERSocialShareManager */,
+				93AF81FE2668960C00B32EE0 /* ERSocialShareManagerTests */,
+				93AF82092668960C00B32EE0 /* ERSocialShareManagerUITests */,
+				93AF81E62668960800B32EE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93AF81E62668960800B32EE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93AF81E52668960800B32EE0 /* ERSocialShareManager.app */,
+				93AF81FB2668960C00B32EE0 /* ERSocialShareManagerTests.xctest */,
+				93AF82062668960C00B32EE0 /* ERSocialShareManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93AF81E72668960800B32EE0 /* ERSocialShareManager */ = {
+			isa = PBXGroup;
+			children = (
+				93AF821A2668B6AB00B32EE0 /* Resources */,
+				93AF81E82668960800B32EE0 /* AppDelegate.swift */,
+				93AF81EA2668960800B32EE0 /* SceneDelegate.swift */,
+				93AF81EC2668960800B32EE0 /* ViewController.swift */,
+				93AF8218266896AA00B32EE0 /* ERSocialShareManager.swift */,
+				93AF81EE2668960800B32EE0 /* Main.storyboard */,
+				93AF81F12668960C00B32EE0 /* Assets.xcassets */,
+				93AF81F32668960C00B32EE0 /* LaunchScreen.storyboard */,
+				93AF81F62668960C00B32EE0 /* Info.plist */,
+			);
+			path = ERSocialShareManager;
+			sourceTree = "<group>";
+		};
+		93AF81FE2668960C00B32EE0 /* ERSocialShareManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				93AF81FF2668960C00B32EE0 /* ERSocialShareManagerTests.swift */,
+				93AF82012668960C00B32EE0 /* Info.plist */,
+			);
+			path = ERSocialShareManagerTests;
+			sourceTree = "<group>";
+		};
+		93AF82092668960C00B32EE0 /* ERSocialShareManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93AF820A2668960C00B32EE0 /* ERSocialShareManagerUITests.swift */,
+				93AF820C2668960C00B32EE0 /* Info.plist */,
+			);
+			path = ERSocialShareManagerUITests;
+			sourceTree = "<group>";
+		};
+		93AF821A2668B6AB00B32EE0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93AF821D2668B6EE00B32EE0 /* testImg.jpg */,
+				93AF821F2668B70B00B32EE0 /* testVideo.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93AF81E42668960800B32EE0 /* ERSocialShareManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93AF820F2668960C00B32EE0 /* Build configuration list for PBXNativeTarget "ERSocialShareManager" */;
+			buildPhases = (
+				93AF81E12668960800B32EE0 /* Sources */,
+				93AF81E22668960800B32EE0 /* Frameworks */,
+				93AF81E32668960800B32EE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ERSocialShareManager;
+			productName = ERSocialShareManager;
+			productReference = 93AF81E52668960800B32EE0 /* ERSocialShareManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93AF81FA2668960C00B32EE0 /* ERSocialShareManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93AF82122668960C00B32EE0 /* Build configuration list for PBXNativeTarget "ERSocialShareManagerTests" */;
+			buildPhases = (
+				93AF81F72668960C00B32EE0 /* Sources */,
+				93AF81F82668960C00B32EE0 /* Frameworks */,
+				93AF81F92668960C00B32EE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93AF81FD2668960C00B32EE0 /* PBXTargetDependency */,
+			);
+			name = ERSocialShareManagerTests;
+			productName = ERSocialShareManagerTests;
+			productReference = 93AF81FB2668960C00B32EE0 /* ERSocialShareManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93AF82052668960C00B32EE0 /* ERSocialShareManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93AF82152668960C00B32EE0 /* Build configuration list for PBXNativeTarget "ERSocialShareManagerUITests" */;
+			buildPhases = (
+				93AF82022668960C00B32EE0 /* Sources */,
+				93AF82032668960C00B32EE0 /* Frameworks */,
+				93AF82042668960C00B32EE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93AF82082668960C00B32EE0 /* PBXTargetDependency */,
+			);
+			name = ERSocialShareManagerUITests;
+			productName = ERSocialShareManagerUITests;
+			productReference = 93AF82062668960C00B32EE0 /* ERSocialShareManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93AF81DD2668960800B32EE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					93AF81E42668960800B32EE0 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					93AF81FA2668960C00B32EE0 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 93AF81E42668960800B32EE0;
+					};
+					93AF82052668960C00B32EE0 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 93AF81E42668960800B32EE0;
+					};
+				};
+			};
+			buildConfigurationList = 93AF81E02668960800B32EE0 /* Build configuration list for PBXProject "ERSocialShareManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93AF81DC2668960800B32EE0;
+			productRefGroup = 93AF81E62668960800B32EE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93AF81E42668960800B32EE0 /* ERSocialShareManager */,
+				93AF81FA2668960C00B32EE0 /* ERSocialShareManagerTests */,
+				93AF82052668960C00B32EE0 /* ERSocialShareManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93AF81E32668960800B32EE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AF81F52668960C00B32EE0 /* LaunchScreen.storyboard in Resources */,
+				93AF82202668B70B00B32EE0 /* testVideo.mp4 in Resources */,
+				93AF81F22668960C00B32EE0 /* Assets.xcassets in Resources */,
+				93AF81F02668960800B32EE0 /* Main.storyboard in Resources */,
+				93AF82242668E98100B32EE0 /* testImg.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AF81F92668960C00B32EE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AF82042668960C00B32EE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93AF81E12668960800B32EE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AF81ED2668960800B32EE0 /* ViewController.swift in Sources */,
+				93AF8219266896AA00B32EE0 /* ERSocialShareManager.swift in Sources */,
+				93AF81E92668960800B32EE0 /* AppDelegate.swift in Sources */,
+				93AF81EB2668960800B32EE0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AF81F72668960C00B32EE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AF82002668960C00B32EE0 /* ERSocialShareManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AF82022668960C00B32EE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AF820B2668960C00B32EE0 /* ERSocialShareManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93AF81FD2668960C00B32EE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93AF81E42668960800B32EE0 /* ERSocialShareManager */;
+			targetProxy = 93AF81FC2668960C00B32EE0 /* PBXContainerItemProxy */;
+		};
+		93AF82082668960C00B32EE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93AF81E42668960800B32EE0 /* ERSocialShareManager */;
+			targetProxy = 93AF82072668960C00B32EE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93AF81EE2668960800B32EE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93AF81EF2668960800B32EE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93AF81F32668960C00B32EE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93AF81F42668960C00B32EE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93AF820D2668960C00B32EE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93AF820E2668960C00B32EE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93AF82102668960C00B32EE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERSocialShareManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERSocialShareManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93AF82112668960C00B32EE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERSocialShareManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERSocialShareManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93AF82132668960C00B32EE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERSocialShareManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERSocialShareManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ERSocialShareManager.app/ERSocialShareManager";
+			};
+			name = Debug;
+		};
+		93AF82142668960C00B32EE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERSocialShareManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERSocialShareManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ERSocialShareManager.app/ERSocialShareManager";
+			};
+			name = Release;
+		};
+		93AF82162668960C00B32EE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERSocialShareManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERSocialShareManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ERSocialShareManager;
+			};
+			name = Debug;
+		};
+		93AF82172668960C00B32EE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERSocialShareManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERSocialShareManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ERSocialShareManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93AF81E02668960800B32EE0 /* Build configuration list for PBXProject "ERSocialShareManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AF820D2668960C00B32EE0 /* Debug */,
+				93AF820E2668960C00B32EE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93AF820F2668960C00B32EE0 /* Build configuration list for PBXNativeTarget "ERSocialShareManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AF82102668960C00B32EE0 /* Debug */,
+				93AF82112668960C00B32EE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93AF82122668960C00B32EE0 /* Build configuration list for PBXNativeTarget "ERSocialShareManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AF82132668960C00B32EE0 /* Debug */,
+				93AF82142668960C00B32EE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93AF82152668960C00B32EE0 /* Build configuration list for PBXNativeTarget "ERSocialShareManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AF82162668960C00B32EE0 /* Debug */,
+				93AF82172668960C00B32EE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93AF81DD2668960800B32EE0 /* Project object */;
+}
