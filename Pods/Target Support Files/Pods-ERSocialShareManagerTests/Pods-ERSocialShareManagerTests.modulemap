@@ -1,0 +1,6 @@
+framework module Pods_ERSocialShareManagerTests {
+  umbrella header "Pods-ERSocialShareManagerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 
 import UIKit
 import Photos
+import FBSDKShareKit
 
 class ERSocialShareManager: NSObject {
     
@@ -36,7 +37,7 @@ class ERSocialShareManager: NSObject {
         }
     }
     
-    @objc class func video(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+    @objc class func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
             if error != nil {
                 print(error!)
             }

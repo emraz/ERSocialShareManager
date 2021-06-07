@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BAE368F3E77FC4427007534 /* Pods_ERSocialShareManager_ERSocialShareManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2C55C5821C1746BD0B5E64 /* Pods_ERSocialShareManager_ERSocialShareManagerUITests.framework */; };
+		935FD3C3266E5FF400DB8ACA /* ERFBShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FD3C2266E5FF400DB8ACA /* ERFBShareManager.swift */; };
+		935FD3C5266E630F00DB8ACA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FD3C4266E630F00DB8ACA /* Extensions.swift */; };
 		93AF81E92668960800B32EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF81E82668960800B32EE0 /* AppDelegate.swift */; };
 		93AF81EB2668960800B32EE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF81EA2668960800B32EE0 /* SceneDelegate.swift */; };
 		93AF81ED2668960800B32EE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF81EC2668960800B32EE0 /* ViewController.swift */; };
@@ -18,6 +21,8 @@
 		93AF8219266896AA00B32EE0 /* ERSocialShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF8218266896AA00B32EE0 /* ERSocialShareManager.swift */; };
 		93AF82202668B70B00B32EE0 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 93AF821F2668B70B00B32EE0 /* testVideo.mp4 */; };
 		93AF82242668E98100B32EE0 /* testImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93AF821D2668B6EE00B32EE0 /* testImg.jpg */; };
+		96EB9044A1D7A40C91639FC5 /* Pods_ERSocialShareManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F196F5C026EB8A3A631674C /* Pods_ERSocialShareManagerTests.framework */; };
+		FFEE3B2FE8E19C91B974FE0E /* Pods_ERSocialShareManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9E6DC1C270FE8E161FF232 /* Pods_ERSocialShareManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F196F5C026EB8A3A631674C /* Pods_ERSocialShareManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERSocialShareManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD91995ECE322B916D90E22 /* Pods-ERSocialShareManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSocialShareManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-ERSocialShareManagerTests/Pods-ERSocialShareManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		24E9A907FB96CBC901D1A17E /* Pods-ERSocialShareManager-ERSocialShareManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSocialShareManager-ERSocialShareManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-ERSocialShareManager-ERSocialShareManagerUITests/Pods-ERSocialShareManager-ERSocialShareManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3A9E6DC1C270FE8E161FF232 /* Pods_ERSocialShareManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERSocialShareManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		529B96B2B3553E8C0CFF9DE3 /* Pods-ERSocialShareManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSocialShareManager.debug.xcconfig"; path = "Target Support Files/Pods-ERSocialShareManager/Pods-ERSocialShareManager.debug.xcconfig"; sourceTree = "<group>"; };
+		935FD3C2266E5FF400DB8ACA /* ERFBShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERFBShareManager.swift; sourceTree = "<group>"; };
+		935FD3C4266E630F00DB8ACA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		93AF81E52668960800B32EE0 /* ERSocialShareManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERSocialShareManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AF81E82668960800B32EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93AF81EA2668960800B32EE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +67,10 @@
 		93AF8218266896AA00B32EE0 /* ERSocialShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERSocialShareManager.swift; sourceTree = "<group>"; };
 		93AF821D2668B6EE00B32EE0 /* testImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImg.jpg; sourceTree = "<group>"; };
 		93AF821F2668B70B00B32EE0 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
+		9AC3DA2340CF4DCBC6C6A2E2 /* Pods-ERSocialShareManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSocialShareManagerTests.release.xcconfig"; path = "Target Support Files/Pods-ERSocialShareManagerTests/Pods-ERSocialShareManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC932C90F92FF389DEC56EDD /* Pods-ERSocialShareManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSocialShareManager.release.xcconfig"; path = "Target Support Files/Pods-ERSocialShareManager/Pods-ERSocialShareManager.release.xcconfig"; sourceTree = "<group>"; };
+		CD2C55C5821C1746BD0B5E64 /* Pods_ERSocialShareManager_ERSocialShareManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERSocialShareManager_ERSocialShareManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC87F9CE7570CF0FF3CFA63 /* Pods-ERSocialShareManager-ERSocialShareManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSocialShareManager-ERSocialShareManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-ERSocialShareManager-ERSocialShareManagerUITests/Pods-ERSocialShareManager-ERSocialShareManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFEE3B2FE8E19C91B974FE0E /* Pods_ERSocialShareManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96EB9044A1D7A40C91639FC5 /* Pods_ERSocialShareManagerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BAE368F3E77FC4427007534 /* Pods_ERSocialShareManager_ERSocialShareManagerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C1E1D821DF7C5D124FBE647 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				529B96B2B3553E8C0CFF9DE3 /* Pods-ERSocialShareManager.debug.xcconfig */,
+				CC932C90F92FF389DEC56EDD /* Pods-ERSocialShareManager.release.xcconfig */,
+				DBC87F9CE7570CF0FF3CFA63 /* Pods-ERSocialShareManager-ERSocialShareManagerUITests.debug.xcconfig */,
+				24E9A907FB96CBC901D1A17E /* Pods-ERSocialShareManager-ERSocialShareManagerUITests.release.xcconfig */,
+				1FD91995ECE322B916D90E22 /* Pods-ERSocialShareManagerTests.debug.xcconfig */,
+				9AC3DA2340CF4DCBC6C6A2E2 /* Pods-ERSocialShareManagerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		79BDACE5878774AA7922C5D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A9E6DC1C270FE8E161FF232 /* Pods_ERSocialShareManager.framework */,
+				CD2C55C5821C1746BD0B5E64 /* Pods_ERSocialShareManager_ERSocialShareManagerUITests.framework */,
+				0F196F5C026EB8A3A631674C /* Pods_ERSocialShareManagerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		93AF81DC2668960800B32EE0 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +131,8 @@
 				93AF81FE2668960C00B32EE0 /* ERSocialShareManagerTests */,
 				93AF82092668960C00B32EE0 /* ERSocialShareManagerUITests */,
 				93AF81E62668960800B32EE0 /* Products */,
+				4C1E1D821DF7C5D124FBE647 /* Pods */,
+				79BDACE5878774AA7922C5D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +154,8 @@
 				93AF81EA2668960800B32EE0 /* SceneDelegate.swift */,
 				93AF81EC2668960800B32EE0 /* ViewController.swift */,
 				93AF8218266896AA00B32EE0 /* ERSocialShareManager.swift */,
+				935FD3C2266E5FF400DB8ACA /* ERFBShareManager.swift */,
+				935FD3C4266E630F00DB8ACA /* Extensions.swift */,
 				93AF81EE2668960800B32EE0 /* Main.storyboard */,
 				93AF81F12668960C00B32EE0 /* Assets.xcassets */,
 				93AF81F32668960C00B32EE0 /* LaunchScreen.storyboard */,
@@ -152,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93AF820F2668960C00B32EE0 /* Build configuration list for PBXNativeTarget "ERSocialShareManager" */;
 			buildPhases = (
+				972DFB3FA1669143F2AC9B3E /* [CP] Check Pods Manifest.lock */,
 				93AF81E12668960800B32EE0 /* Sources */,
 				93AF81E22668960800B32EE0 /* Frameworks */,
 				93AF81E32668960800B32EE0 /* Resources */,
+				16991B0EEC3CF314EC3C06D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93AF82122668960C00B32EE0 /* Build configuration list for PBXNativeTarget "ERSocialShareManagerTests" */;
 			buildPhases = (
+				33E2B289752C4E692CBDD368 /* [CP] Check Pods Manifest.lock */,
 				93AF81F72668960C00B32EE0 /* Sources */,
 				93AF81F82668960C00B32EE0 /* Frameworks */,
 				93AF81F92668960C00B32EE0 /* Resources */,
@@ -187,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93AF82152668960C00B32EE0 /* Build configuration list for PBXNativeTarget "ERSocialShareManagerUITests" */;
 			buildPhases = (
+				7D4A6EEDD0035E1A99FB9B36 /* [CP] Check Pods Manifest.lock */,
 				93AF82022668960C00B32EE0 /* Sources */,
 				93AF82032668960C00B32EE0 /* Frameworks */,
 				93AF82042668960C00B32EE0 /* Resources */,
+				71ABFA2F0528B4C9B1A6FB28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,15 +323,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16991B0EEC3CF314EC3C06D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager/Pods-ERSocialShareManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager/Pods-ERSocialShareManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager/Pods-ERSocialShareManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33E2B289752C4E692CBDD368 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ERSocialShareManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71ABFA2F0528B4C9B1A6FB28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager-ERSocialShareManagerUITests/Pods-ERSocialShareManager-ERSocialShareManagerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager-ERSocialShareManagerUITests/Pods-ERSocialShareManager-ERSocialShareManagerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager-ERSocialShareManagerUITests/Pods-ERSocialShareManager-ERSocialShareManagerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D4A6EEDD0035E1A99FB9B36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ERSocialShareManager-ERSocialShareManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		972DFB3FA1669143F2AC9B3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ERSocialShareManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93AF81E12668960800B32EE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				93AF81ED2668960800B32EE0 /* ViewController.swift in Sources */,
+				935FD3C5266E630F00DB8ACA /* Extensions.swift in Sources */,
 				93AF8219266896AA00B32EE0 /* ERSocialShareManager.swift in Sources */,
 				93AF81E92668960800B32EE0 /* AppDelegate.swift in Sources */,
 				93AF81EB2668960800B32EE0 /* SceneDelegate.swift in Sources */,
+				935FD3C3266E5FF400DB8ACA /* ERFBShareManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +609,7 @@
 		};
 		93AF82102668960C00B32EE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 529B96B2B3553E8C0CFF9DE3 /* Pods-ERSocialShareManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +629,7 @@
 		};
 		93AF82112668960C00B32EE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC932C90F92FF389DEC56EDD /* Pods-ERSocialShareManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -491,6 +649,7 @@
 		};
 		93AF82132668960C00B32EE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD91995ECE322B916D90E22 /* Pods-ERSocialShareManagerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +672,7 @@
 		};
 		93AF82142668960C00B32EE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC3DA2340CF4DCBC6C6A2E2 /* Pods-ERSocialShareManagerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +695,7 @@
 		};
 		93AF82162668960C00B32EE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC87F9CE7570CF0FF3CFA63 /* Pods-ERSocialShareManager-ERSocialShareManagerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +716,7 @@
 		};
 		93AF82172668960C00B32EE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24E9A907FB96CBC901D1A17E /* Pods-ERSocialShareManager-ERSocialShareManagerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

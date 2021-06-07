@@ -7,6 +7,7 @@
 
 import UIKit
 import Photos
+import FBSDKShareKit
 
 class ViewController: UIViewController {
     
@@ -24,6 +25,27 @@ class ViewController: UIViewController {
     
     @IBAction func didPresInstagramShareButton(_ sender: Any) {
         isVideo ? ERSocialShareManager.postVideoToInstagram(videoPath: videoPath) : ERSocialShareManager.postImageToInstagram(image: image)
+    }
+    
+    @IBAction func didPressMessengerShareButton(_ sender: Any) {
+        
+        isVideo ? ERFBShareManager.shareVideoToFacebook(videoPath: videoPath, isMessenger: true) : ERFBShareManager.shareImageToFacebook(image: image, isMessenger: true)
+    }
+    
+    @IBAction func didPressFBShareButton(_ sender: Any) {
+        
+        isVideo ? ERFBShareManager.shareVideoToFacebook(videoPath: videoPath, isMessenger: false) : ERFBShareManager.shareImageToFacebook(image: image, isMessenger: false)
+    }
+}
+
+extension ViewController: SharingDelegate {
+    func sharer(_ sharer: Sharing, didCompleteWithResults results: [String : Any]) {
+    }
+    
+    func sharer(_ sharer: Sharing, didFailWithError error: Error) {
+    }
+    
+    func sharerDidCancel(_ sharer: Sharing) {
     }
 }
 

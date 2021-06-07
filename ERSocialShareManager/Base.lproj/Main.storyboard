@@ -17,54 +17,67 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQi-kd-BtS">
-                                <rect key="frame" x="138" y="433" width="138" height="30"/>
+                                <rect key="frame" x="156.5" y="433" width="101" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                <state key="normal" title="  Instagram(Image)  ">
+                                <state key="normal" title="  Instagram  ">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
                                     <action selector="didPresInstagramShareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G1y-QZ-qBS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uar-Ug-wrp">
-                                <rect key="frame" x="138" y="471" width="138" height="30"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                <state key="normal" title="  Instagram(Video)  ">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPresInstagramShareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERs-n6-RgC"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qNZ-zY-WQo">
-                                <rect key="frame" x="138" y="394" width="138" height="31"/>
+                                <rect key="frame" x="156.5" y="370" width="101" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXb-7V-hb4">
-                                        <rect key="frame" x="0.0" y="0.0" width="81" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bff-Hr-tNA">
-                                        <rect key="frame" x="89" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="52" y="0.0" width="51" height="31"/>
                                         <connections>
                                             <action selector="didPressMediaTypeSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="xgL-hS-vHy"/>
                                         </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abc-Lp-kQy">
+                                <rect key="frame" x="156.5" y="471" width="101" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <state key="normal" title="Messenger">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressMessengerShareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="blS-op-inf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqu-Ba-ZKW">
+                                <rect key="frame" x="156.5" y="509" width="101" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <state key="normal" title="FB Share">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressFBShareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jtd-2G-Hyc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="FQi-kd-BtS" firstAttribute="top" secondItem="qNZ-zY-WQo" secondAttribute="bottom" constant="8" symbolic="YES" id="1JL-OQ-dK4"/>
-                            <constraint firstItem="uar-Ug-wrp" firstAttribute="top" secondItem="FQi-kd-BtS" secondAttribute="bottom" constant="8" symbolic="YES" id="4gC-ru-bTe"/>
-                            <constraint firstItem="uar-Ug-wrp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9rN-8O-7St"/>
-                            <constraint firstItem="uar-Ug-wrp" firstAttribute="width" secondItem="FQi-kd-BtS" secondAttribute="width" id="AUy-qp-fY0"/>
+                            <constraint firstItem="abc-Lp-kQy" firstAttribute="width" secondItem="FQi-kd-BtS" secondAttribute="width" id="0Jm-bH-y5m"/>
+                            <constraint firstItem="FQi-kd-BtS" firstAttribute="top" secondItem="qNZ-zY-WQo" secondAttribute="bottom" constant="32" id="1JL-OQ-dK4"/>
+                            <constraint firstItem="abc-Lp-kQy" firstAttribute="centerX" secondItem="FQi-kd-BtS" secondAttribute="centerX" id="98a-ka-IxF"/>
                             <constraint firstItem="qNZ-zY-WQo" firstAttribute="width" secondItem="FQi-kd-BtS" secondAttribute="width" id="AYy-gT-JqB"/>
                             <constraint firstItem="FQi-kd-BtS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JcN-sn-0LB"/>
                             <constraint firstItem="qNZ-zY-WQo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbY-Y3-dcv"/>
+                            <constraint firstItem="tqu-Ba-ZKW" firstAttribute="centerX" secondItem="abc-Lp-kQy" secondAttribute="centerX" id="dcb-Qj-l7X"/>
                             <constraint firstItem="FQi-kd-BtS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e4K-tO-gNz"/>
+                            <constraint firstItem="tqu-Ba-ZKW" firstAttribute="width" secondItem="abc-Lp-kQy" secondAttribute="width" id="op0-X7-Td1"/>
+                            <constraint firstItem="tqu-Ba-ZKW" firstAttribute="top" secondItem="abc-Lp-kQy" secondAttribute="bottom" constant="8" symbolic="YES" id="rY8-Uj-jQ4"/>
+                            <constraint firstItem="abc-Lp-kQy" firstAttribute="top" secondItem="FQi-kd-BtS" secondAttribute="bottom" constant="8" symbolic="YES" id="uVb-0b-VKo"/>
                         </constraints>
                     </view>
                 </viewController>
