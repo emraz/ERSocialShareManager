@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -63,18 +64,31 @@
                                     <action selector="didPressFBShareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jtd-2G-Hyc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgB-D2-UPO">
+                                <rect key="frame" x="156.5" y="547" width="101" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <state key="normal" title="TikTok">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressTikTokShareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Afj-HJ-RZh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="abc-Lp-kQy" firstAttribute="width" secondItem="FQi-kd-BtS" secondAttribute="width" id="0Jm-bH-y5m"/>
                             <constraint firstItem="FQi-kd-BtS" firstAttribute="top" secondItem="qNZ-zY-WQo" secondAttribute="bottom" constant="32" id="1JL-OQ-dK4"/>
+                            <constraint firstItem="MgB-D2-UPO" firstAttribute="centerX" secondItem="tqu-Ba-ZKW" secondAttribute="centerX" id="2L4-FW-rM3"/>
+                            <constraint firstItem="MgB-D2-UPO" firstAttribute="width" secondItem="tqu-Ba-ZKW" secondAttribute="width" id="55E-NG-Hjr"/>
                             <constraint firstItem="abc-Lp-kQy" firstAttribute="centerX" secondItem="FQi-kd-BtS" secondAttribute="centerX" id="98a-ka-IxF"/>
                             <constraint firstItem="qNZ-zY-WQo" firstAttribute="width" secondItem="FQi-kd-BtS" secondAttribute="width" id="AYy-gT-JqB"/>
                             <constraint firstItem="FQi-kd-BtS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JcN-sn-0LB"/>
                             <constraint firstItem="qNZ-zY-WQo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbY-Y3-dcv"/>
                             <constraint firstItem="tqu-Ba-ZKW" firstAttribute="centerX" secondItem="abc-Lp-kQy" secondAttribute="centerX" id="dcb-Qj-l7X"/>
                             <constraint firstItem="FQi-kd-BtS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e4K-tO-gNz"/>
+                            <constraint firstItem="MgB-D2-UPO" firstAttribute="top" secondItem="tqu-Ba-ZKW" secondAttribute="bottom" constant="8" symbolic="YES" id="fq0-Wc-SjG"/>
                             <constraint firstItem="tqu-Ba-ZKW" firstAttribute="width" secondItem="abc-Lp-kQy" secondAttribute="width" id="op0-X7-Td1"/>
                             <constraint firstItem="tqu-Ba-ZKW" firstAttribute="top" secondItem="abc-Lp-kQy" secondAttribute="bottom" constant="8" symbolic="YES" id="rY8-Uj-jQ4"/>
                             <constraint firstItem="abc-Lp-kQy" firstAttribute="top" secondItem="FQi-kd-BtS" secondAttribute="bottom" constant="8" symbolic="YES" id="uVb-0b-VKo"/>

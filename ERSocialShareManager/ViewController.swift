@@ -36,6 +36,10 @@ class ViewController: UIViewController {
         
         isVideo ? ERFBShareManager.shareVideoToFacebook(videoPath: videoPath, isMessenger: false) : ERFBShareManager.shareImageToFacebook(image: image, isMessenger: false)
     }
+    
+    @IBAction func didPressTikTokShareButton(_ sender: Any) {
+    }
+    
 }
 
 extension ViewController: SharingDelegate {

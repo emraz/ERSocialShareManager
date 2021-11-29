@@ -80,6 +80,10 @@
         <string>fb-messenger-share-api</string>
         <string>fbauth2</string>
         <string>fbshareextension</string>
+        <string>tiktokopensdk</string>
+        <string>tiktoksharesdk</string>
+        <string>snssdk1180</string>
+        <string>snssdk1233</string>
     </array>
     <key>NSPhotoLibraryAddUsageDescription</key>
     <string>Need to save photos</string>
