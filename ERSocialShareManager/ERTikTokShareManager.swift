@@ -48,34 +48,31 @@ class ERTikTokShareManager: NSObject {
     }
     
     private class func shareToTikTok(isVideo: Bool) {
-                
+        
         let fetchOptions = PHFetchOptions()
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: isVideo ? false : true)]
         // it's weired the ascending value is different for video and image, no idea why
         // Need to check this matter later
-
+        
         let fetchResult = isVideo ? PHAsset.fetchAssets(with: .video, options: fetchOptions) : PHAsset.fetchAssets(with: .image, options: fetchOptions)
         
+        //let app = TikTokOpenSDKApplicationDelegate.sharedInstance().isAppInstalled()
         let request = TikTokOpenSDKShareRequest()
-        request.mediaType = isVideo ? TikTokOpenSDKShareMediaTypeVideo : TikTokOpenSDKShareMediaTypeImage;
+        request.mediaType = isVideo ? TikTokOpenSDKShareMediaType.video : TikTokOpenSDKShareMediaType.image
         
-        var mediaLocalIdentifiers: [String] = []
-        for asset in self.selectedAssets {
-            mediaLocalIdentifiers.append(asset)
-        }
-        request.localIdentifiers = mediaLocalIdentifiers
-
         if let lastAsset = fetchResult.lastObject {
             
-            let url = URL(string: "instagram://library?LocalIdentifier=\(lastAsset.localIdentifier)")!
+            var mediaLocalIdentifiers: [String] = []
+            mediaLocalIdentifiers.append(lastAsset.localIdentifier)
             
-            if UIApplication.shared.canOpenURL(url) {
-                UIApplication.shared.open(url)
-            } else {
-                print("Instagram is not installed")
-            }
+            request.localIdentifiers = mediaLocalIdentifiers
+            request.state = "0e2be0aa1a6b28087a249eee4f66f464"
+            request.hashtag = "SlideShowMaker"
+            request.landedPageType = .publish
+            
+            request.send(completionBlock: { resp -> Void in
+                print(resp)
+            })
         }
     }
-
-
 }

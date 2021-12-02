@@ -52,13 +52,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let url = URLContexts.first?.url else {
             return
         }
-
+        
         ApplicationDelegate.shared.application(
             UIApplication.shared,
             open: url,
             sourceApplication: nil,
             annotation: [UIApplication.OpenURLOptionsKey.annotation]
         )
+        // For TikTok SDK
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            _ = appDelegate.application(UIApplication.shared, open: url, options: [:])
+        }
     }
 }
 

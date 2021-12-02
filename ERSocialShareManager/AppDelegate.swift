@@ -7,11 +7,13 @@
 
 import UIKit
 import FBSDKCoreKit
+import TikTokOpenSDK
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+class AppDelegate: UIResponder, UIApplicationDelegate, TikTokOpenSDKLogDelegate {
+    func onLog(_ logInfo: String) {
+        print(logInfo)
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -20,7 +22,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             didFinishLaunchingWithOptions: launchOptions
         )
         
+        // For TikTok SDK
+        TikTokOpenSDKApplicationDelegate.sharedInstance().logDelegate = self
+        TikTokOpenSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
         return true
+    }
+    
+    // For TikTok SDK
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+
+        guard let sourceApplication = options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+              let annotation = options[UIApplication.OpenURLOptionsKey.annotation] else {
+            return false
+        }
+
+        if TikTokOpenSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: sourceApplication, annotation: annotation) {
+            return true
+        }
+        return false
+    }
+
+    // For TikTok SDK
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        if TikTokOpenSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation) {
+            return true
+        }
+        return false
+    }
+
+    // For TikTok SDK
+    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
+        if TikTokOpenSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: nil, annotation: "") {
+            return true
+        }
+        return false
     }
 
     // MARK: UISceneSession Lifecycle

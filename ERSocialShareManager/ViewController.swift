@@ -8,6 +8,7 @@
 import UIKit
 import Photos
 import FBSDKShareKit
+import TikTokOpenSDK
 
 class ViewController: UIViewController {
     
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        TikTokOpenSDKApplicationDelegate.sharedInstance().logDelegate = self
     }
     
     @IBAction func didPressMediaTypeSwitch(_ sender: UISwitch) {
@@ -38,6 +40,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didPressTikTokShareButton(_ sender: Any) {
+        isVideo ? ERTikTokShareManager.shareVideoToTikTok(videoPath: videoPath) : ERTikTokShareManager.shareImageToTikTok(image: image)
     }
     
 }
@@ -50,6 +53,12 @@ extension ViewController: SharingDelegate {
     }
     
     func sharerDidCancel(_ sharer: Sharing) {
+    }
+}
+
+extension ViewController: TikTokOpenSDKLogDelegate {
+    func onLog(_ logInfo: String) {
+        print(logInfo)
     }
 }
 
