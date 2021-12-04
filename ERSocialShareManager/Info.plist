@@ -22,7 +22,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb239860421233621</string>
-				<string>awkpf5vsj665sb8u</string>
+				<string>aw4366r12bgdx5o8</string>
 			</array>
 		</dict>
 	</array>
@@ -62,7 +62,7 @@
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Please allow this app to access photo gallery. This permission need to edit your photo.</string>
 	<key>TikTokAppID</key>
-	<string>awkpf5vsj665sb8u</string>
+	<string>aw4366r12bgdx5o8</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

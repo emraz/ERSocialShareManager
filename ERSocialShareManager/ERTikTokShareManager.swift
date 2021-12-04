@@ -66,8 +66,8 @@ class ERTikTokShareManager: NSObject {
             mediaLocalIdentifiers.append(lastAsset.localIdentifier)
             
             request.localIdentifiers = mediaLocalIdentifiers
-            request.state = "0e2be0aa1a6b28087a249eee4f66f464"
-            request.hashtag = "SlideShowMaker"
+            request.state = "d3d1d6a4d2c95921d10e635f04a0e5b4"
+            request.hashtag = "ERSocialShareManager"
             request.landedPageType = .publish
             
             request.send(completionBlock: { resp -> Void in
