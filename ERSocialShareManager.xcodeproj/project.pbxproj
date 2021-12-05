@@ -10,6 +10,8 @@
 		2BAE368F3E77FC4427007534 /* Pods_ERSocialShareManager_ERSocialShareManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2C55C5821C1746BD0B5E64 /* Pods_ERSocialShareManager_ERSocialShareManagerUITests.framework */; };
 		935FD3C3266E5FF400DB8ACA /* ERFBShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FD3C2266E5FF400DB8ACA /* ERFBShareManager.swift */; };
 		935FD3C5266E630F00DB8ACA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FD3C4266E630F00DB8ACA /* Extensions.swift */; };
+		936C70CB275CD4080018518A /* ERSnapChatShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936C70CA275CD4080018518A /* ERSnapChatShareManager.swift */; };
+		936C70CE275CDB700018518A /* ERFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936C70CD275CDB700018518A /* ERFileManager.swift */; };
 		93AF81E92668960800B32EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF81E82668960800B32EE0 /* AppDelegate.swift */; };
 		93AF81EB2668960800B32EE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF81EA2668960800B32EE0 /* SceneDelegate.swift */; };
 		93AF81ED2668960800B32EE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF81EC2668960800B32EE0 /* ViewController.swift */; };
@@ -51,6 +53,8 @@
 		529B96B2B3553E8C0CFF9DE3 /* Pods-ERSocialShareManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSocialShareManager.debug.xcconfig"; path = "Target Support Files/Pods-ERSocialShareManager/Pods-ERSocialShareManager.debug.xcconfig"; sourceTree = "<group>"; };
 		935FD3C2266E5FF400DB8ACA /* ERFBShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERFBShareManager.swift; sourceTree = "<group>"; };
 		935FD3C4266E630F00DB8ACA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		936C70CA275CD4080018518A /* ERSnapChatShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERSnapChatShareManager.swift; sourceTree = "<group>"; };
+		936C70CD275CDB700018518A /* ERFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ERFileManager.swift; sourceTree = "<group>"; };
 		93AF81E52668960800B32EE0 /* ERSocialShareManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERSocialShareManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AF81E82668960800B32EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93AF81EA2668960800B32EE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +130,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		936C70CC275CDB700018518A /* ERFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				936C70CD275CDB700018518A /* ERFileManager.swift */,
+			);
+			path = ERFileManager;
+			sourceTree = "<group>";
+		};
 		93AF81DC2668960800B32EE0 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +163,7 @@
 		93AF81E72668960800B32EE0 /* ERSocialShareManager */ = {
 			isa = PBXGroup;
 			children = (
+				936C70CC275CDB700018518A /* ERFileManager */,
 				93AF821A2668B6AB00B32EE0 /* Resources */,
 				93AF81E82668960800B32EE0 /* AppDelegate.swift */,
 				93AF81EA2668960800B32EE0 /* SceneDelegate.swift */,
@@ -158,6 +171,7 @@
 				93AF8218266896AA00B32EE0 /* ERInstagramShareManager.swift */,
 				935FD3C2266E5FF400DB8ACA /* ERFBShareManager.swift */,
 				93BBF47127551D0500646B95 /* ERTikTokShareManager.swift */,
+				936C70CA275CD4080018518A /* ERSnapChatShareManager.swift */,
 				935FD3C4266E630F00DB8ACA /* Extensions.swift */,
 				93AF81EE2668960800B32EE0 /* Main.storyboard */,
 				93AF81F12668960C00B32EE0 /* Assets.xcassets */,
@@ -439,7 +453,9 @@
 				93AF8219266896AA00B32EE0 /* ERInstagramShareManager.swift in Sources */,
 				93AF81E92668960800B32EE0 /* AppDelegate.swift in Sources */,
 				93AF81EB2668960800B32EE0 /* SceneDelegate.swift in Sources */,
+				936C70CE275CDB700018518A /* ERFileManager.swift in Sources */,
 				93BBF47227551D0600646B95 /* ERTikTokShareManager.swift in Sources */,
+				936C70CB275CD4080018518A /* ERSnapChatShareManager.swift in Sources */,
 				935FD3C3266E5FF400DB8ACA /* ERFBShareManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

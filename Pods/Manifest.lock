@@ -9,23 +9,29 @@ PODS:
     - FBSDKShareKit/Share (= 9.3.0)
   - FBSDKShareKit/Share (9.3.0):
     - FBSDKCoreKit (~> 9.3.0)
+  - SnapSDK/SCSDKCoreKit (1.14.0)
+  - SnapSDK/SCSDKCreativeKit (1.14.0):
+    - SnapSDK/SCSDKCoreKit
   - TikTokOpenSDK (5.0.0)
 
 DEPENDENCIES:
   - FBSDKShareKit
+  - SnapSDK/SCSDKCreativeKit
   - TikTokOpenSDK (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
     - FBSDKCoreKit
     - FBSDKShareKit
+    - SnapSDK
     - TikTokOpenSDK
 
 SPEC CHECKSUMS:
   FBSDKCoreKit: 0d1ae58388a458b8222f72025804cdc84eb5d0c3
   FBSDKShareKit: 70889c97c62f0c6b3ccb8b999e73a85f19024001
+  SnapSDK: 1ced78c16c1263ef3f67458c90d4e9eb1be89bc6
   TikTokOpenSDK: a63564ea4dc1fabc56352bf7aa9ddc386cdb63b6
 
-PODFILE CHECKSUM: 008bb06108e933c3a6dbba8f7016883a152a5bc1
+PODFILE CHECKSUM: bd0a5874dbb88cb3cb62cced9deb7036541c2d8b
 
 COCOAPODS: 1.11.2

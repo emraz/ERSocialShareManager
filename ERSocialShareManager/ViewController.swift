@@ -9,11 +9,13 @@ import UIKit
 import Photos
 import FBSDKShareKit
 import TikTokOpenSDK
+import SCSDKCreativeKit
 
 class ViewController: UIViewController {
     
     var isVideo = false
     let videoPath = Bundle.main.path(forResource: "testVideo.mp4", ofType: nil)!
+    let videoURL = Bundle.main.url(forResource: "testVideo", withExtension: "mp4")!
     let image = UIImage(named: "testImg.jpg")!
     
     override func viewDidLoad() {
@@ -43,6 +45,9 @@ class ViewController: UIViewController {
         isVideo ? ERTikTokShareManager.shareVideoToTikTok(videoPath: videoPath) : ERTikTokShareManager.shareImageToTikTok(image: image)
     }
     
+    @IBAction func didPressSnapchatShareButton(_ sender: Any) {
+        isVideo ? ERSnapchatShareManager.sharedInstance.shareVideoToSnapchat(videoURL: videoURL) : ERSnapchatShareManager.sharedInstance.shareImageToSnapchat(image: image)
+    }
 }
 
 extension ViewController: SharingDelegate {
