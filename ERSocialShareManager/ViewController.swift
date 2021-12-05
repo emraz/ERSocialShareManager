@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didPresInstagramShareButton(_ sender: Any) {
-        isVideo ? ERSocialShareManager.postVideoToInstagram(videoPath: videoPath) : ERSocialShareManager.postImageToInstagram(image: image)
+        isVideo ? ERInstagramShareManager.postVideoToInstagram(videoPath: videoPath) : ERInstagramShareManager.postImageToInstagram(image: image)
     }
     
     @IBAction func didPressMessengerShareButton(_ sender: Any) {

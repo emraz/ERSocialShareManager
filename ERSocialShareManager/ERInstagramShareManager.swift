@@ -9,7 +9,7 @@ import UIKit
 import Photos
 import FBSDKShareKit
 
-class ERSocialShareManager: NSObject {
+class ERInstagramShareManager: NSObject {
     
     class func postImageToInstagram(image: UIImage) {
         
@@ -33,7 +33,7 @@ class ERSocialShareManager: NSObject {
             }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            ERSocialShareManager.shareToInstagram(isVideo: false)
+            ERInstagramShareManager.shareToInstagram(isVideo: false)
         }
     }
     
@@ -43,7 +43,7 @@ class ERSocialShareManager: NSObject {
             }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            ERSocialShareManager.shareToInstagram(isVideo: true)
+            ERInstagramShareManager.shareToInstagram(isVideo: true)
         }
     }
     

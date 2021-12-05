@@ -18,7 +18,7 @@
 		93AF81F52668960C00B32EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AF81F32668960C00B32EE0 /* LaunchScreen.storyboard */; };
 		93AF82002668960C00B32EE0 /* ERSocialShareManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF81FF2668960C00B32EE0 /* ERSocialShareManagerTests.swift */; };
 		93AF820B2668960C00B32EE0 /* ERSocialShareManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF820A2668960C00B32EE0 /* ERSocialShareManagerUITests.swift */; };
-		93AF8219266896AA00B32EE0 /* ERSocialShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF8218266896AA00B32EE0 /* ERSocialShareManager.swift */; };
+		93AF8219266896AA00B32EE0 /* ERInstagramShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF8218266896AA00B32EE0 /* ERInstagramShareManager.swift */; };
 		93AF82202668B70B00B32EE0 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 93AF821F2668B70B00B32EE0 /* testVideo.mp4 */; };
 		93AF82242668E98100B32EE0 /* testImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93AF821D2668B6EE00B32EE0 /* testImg.jpg */; };
 		93BBF47227551D0600646B95 /* ERTikTokShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBF47127551D0500646B95 /* ERTikTokShareManager.swift */; };
@@ -65,7 +65,7 @@
 		93AF82062668960C00B32EE0 /* ERSocialShareManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ERSocialShareManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AF820A2668960C00B32EE0 /* ERSocialShareManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERSocialShareManagerUITests.swift; sourceTree = "<group>"; };
 		93AF820C2668960C00B32EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93AF8218266896AA00B32EE0 /* ERSocialShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERSocialShareManager.swift; sourceTree = "<group>"; };
+		93AF8218266896AA00B32EE0 /* ERInstagramShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERInstagramShareManager.swift; sourceTree = "<group>"; };
 		93AF821D2668B6EE00B32EE0 /* testImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImg.jpg; sourceTree = "<group>"; };
 		93AF821F2668B70B00B32EE0 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
 		93BBF47127551D0500646B95 /* ERTikTokShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERTikTokShareManager.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 				93AF81E82668960800B32EE0 /* AppDelegate.swift */,
 				93AF81EA2668960800B32EE0 /* SceneDelegate.swift */,
 				93AF81EC2668960800B32EE0 /* ViewController.swift */,
-				93AF8218266896AA00B32EE0 /* ERSocialShareManager.swift */,
+				93AF8218266896AA00B32EE0 /* ERInstagramShareManager.swift */,
 				935FD3C2266E5FF400DB8ACA /* ERFBShareManager.swift */,
 				93BBF47127551D0500646B95 /* ERTikTokShareManager.swift */,
 				935FD3C4266E630F00DB8ACA /* Extensions.swift */,
@@ -436,7 +436,7 @@
 			files = (
 				93AF81ED2668960800B32EE0 /* ViewController.swift in Sources */,
 				935FD3C5266E630F00DB8ACA /* Extensions.swift in Sources */,
-				93AF8219266896AA00B32EE0 /* ERSocialShareManager.swift in Sources */,
+				93AF8219266896AA00B32EE0 /* ERInstagramShareManager.swift in Sources */,
 				93AF81E92668960800B32EE0 /* AppDelegate.swift in Sources */,
 				93AF81EB2668960800B32EE0 /* SceneDelegate.swift in Sources */,
 				93BBF47227551D0600646B95 /* ERTikTokShareManager.swift in Sources */,
