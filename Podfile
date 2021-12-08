@@ -9,6 +9,8 @@ target 'ERSocialShareManager' do
     pod 'FBSDKShareKit'
     pod 'TikTokOpenSDK', '~> 5.0.0'
     pod 'SnapSDK', :subspecs => ['SCSDKCreativeKit']
+    pod 'GoogleAPIClientForREST/YouTube'
+    pod 'Google/SignIn'
 
   target 'ERSocialShareManagerTests' do
     inherit! :search_paths

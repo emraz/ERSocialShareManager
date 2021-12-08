@@ -1,5 +1,8 @@
 ${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager-ERSocialShareManagerUITests/Pods-ERSocialShareManager-ERSocialShareManagerUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework
 ${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework
+${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework
+${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework
+${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/SnapSDK/SCSDKCoreKit/SCSDKCoreKit.framework/SCSDKCoreKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/SnapSDK/SCSDKCreativeKit/SCSDKCreativeKit.framework/SCSDKCreativeKit

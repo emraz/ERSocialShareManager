@@ -8,6 +8,8 @@
 import UIKit
 import FBSDKCoreKit
 import TikTokOpenSDK
+import GoogleAPIClientForREST
+import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, TikTokOpenSDKLogDelegate {
@@ -25,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TikTokOpenSDKLogDelegate 
         // For TikTok SDK
         TikTokOpenSDKApplicationDelegate.sharedInstance().logDelegate = self
         TikTokOpenSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        GIDSignIn.sharedInstance().clientID = "940926917593-slp7npv0tddou9ju25fr20rc3mii1p0n.apps.googleusercontent.com"
         
         return true
     }

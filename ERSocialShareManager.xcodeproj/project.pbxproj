@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002B31B527608DFF00A835A2 /* YouTubeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002B31B427608DFF00A835A2 /* YouTubeVC.swift */; };
+		002F83532760AFCC00455A01 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 002F83522760AFCC00455A01 /* GoogleService-Info.plist */; };
 		2BAE368F3E77FC4427007534 /* Pods_ERSocialShareManager_ERSocialShareManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2C55C5821C1746BD0B5E64 /* Pods_ERSocialShareManager_ERSocialShareManagerUITests.framework */; };
 		935FD3C3266E5FF400DB8ACA /* ERFBShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FD3C2266E5FF400DB8ACA /* ERFBShareManager.swift */; };
 		935FD3C5266E630F00DB8ACA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FD3C4266E630F00DB8ACA /* Extensions.swift */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		002B31B427608DFF00A835A2 /* YouTubeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVC.swift; sourceTree = "<group>"; };
+		002F83522760AFCC00455A01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0F196F5C026EB8A3A631674C /* Pods_ERSocialShareManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERSocialShareManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD91995ECE322B916D90E22 /* Pods-ERSocialShareManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSocialShareManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-ERSocialShareManagerTests/Pods-ERSocialShareManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		24E9A907FB96CBC901D1A17E /* Pods-ERSocialShareManager-ERSocialShareManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSocialShareManager-ERSocialShareManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-ERSocialShareManager-ERSocialShareManagerUITests/Pods-ERSocialShareManager-ERSocialShareManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,10 +177,12 @@
 				93BBF47127551D0500646B95 /* ERTikTokShareManager.swift */,
 				936C70CA275CD4080018518A /* ERSnapChatShareManager.swift */,
 				935FD3C4266E630F00DB8ACA /* Extensions.swift */,
+				002F83522760AFCC00455A01 /* GoogleService-Info.plist */,
 				93AF81EE2668960800B32EE0 /* Main.storyboard */,
 				93AF81F12668960C00B32EE0 /* Assets.xcassets */,
 				93AF81F32668960C00B32EE0 /* LaunchScreen.storyboard */,
 				93AF81F62668960C00B32EE0 /* Info.plist */,
+				002B31B427608DFF00A835A2 /* YouTubeVC.swift */,
 			);
 			path = ERSocialShareManager;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 				93AF81E22668960800B32EE0 /* Frameworks */,
 				93AF81E32668960800B32EE0 /* Resources */,
 				16991B0EEC3CF314EC3C06D8 /* [CP] Embed Pods Frameworks */,
+				A47AF39C20173F0607163C45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +265,7 @@
 				93AF82032668960C00B32EE0 /* Frameworks */,
 				93AF82042668960C00B32EE0 /* Resources */,
 				71ABFA2F0528B4C9B1A6FB28 /* [CP] Embed Pods Frameworks */,
+				80071EF0937BE35F0F55DEDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,6 +329,7 @@
 				93AF81F22668960C00B32EE0 /* Assets.xcassets in Resources */,
 				93AF81F02668960800B32EE0 /* Main.storyboard in Resources */,
 				93AF82242668E98100B32EE0 /* testImg.jpg in Resources */,
+				002F83532760AFCC00455A01 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +428,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		80071EF0937BE35F0F55DEDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager-ERSocialShareManagerUITests/Pods-ERSocialShareManager-ERSocialShareManagerUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager-ERSocialShareManagerUITests/Pods-ERSocialShareManager-ERSocialShareManagerUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager-ERSocialShareManagerUITests/Pods-ERSocialShareManager-ERSocialShareManagerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		972DFB3FA1669143F2AC9B3E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,6 +467,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A47AF39C20173F0607163C45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager/Pods-ERSocialShareManager-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager/Pods-ERSocialShareManager-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ERSocialShareManager/Pods-ERSocialShareManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -448,6 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002B31B527608DFF00A835A2 /* YouTubeVC.swift in Sources */,
 				93AF81ED2668960800B32EE0 /* ViewController.swift in Sources */,
 				935FD3C5266E630F00DB8ACA /* Extensions.swift in Sources */,
 				93AF8219266896AA00B32EE0 /* ERInstagramShareManager.swift in Sources */,

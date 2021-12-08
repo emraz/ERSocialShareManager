@@ -9,6 +9,43 @@ PODS:
     - FBSDKShareKit/Share (= 9.3.0)
   - FBSDKShareKit/Share (9.3.0):
     - FBSDKCoreKit (~> 9.3.0)
+  - FirebaseAnalytics (3.9.0):
+    - FirebaseCore (~> 3.6)
+    - FirebaseInstanceID (~> 1.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseCore (3.6.0):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (1.0.10):
+    - FirebaseCore (~> 3.6)
+  - Google/Core (3.1.0):
+    - FirebaseAnalytics (~> 3.2)
+  - Google/SignIn (3.1.0):
+    - Google/Core
+    - GoogleSignIn (~> 4.0)
+  - GoogleAPIClientForREST/Core (1.6.0):
+    - GTMSessionFetcher (>= 1.6.1)
+  - GoogleAPIClientForREST/YouTube (1.6.0):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.6.1)
+  - GoogleSignIn (4.4.0):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.3.2):
+    - GoogleToolboxForMac/Defines (= 2.3.2)
+  - GoogleToolboxForMac/Defines (2.3.2)
+  - "GoogleToolboxForMac/NSData+zlib (2.3.2)":
+    - GoogleToolboxForMac/Defines (= 2.3.2)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.3.2)":
+    - GoogleToolboxForMac/DebugUtils (= 2.3.2)
+    - GoogleToolboxForMac/Defines (= 2.3.2)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.3.2)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.3.2)"
+  - GTMSessionFetcher (1.7.0):
+    - GTMSessionFetcher/Full (= 1.7.0)
+  - GTMSessionFetcher/Core (1.7.0)
+  - GTMSessionFetcher/Full (1.7.0):
+    - GTMSessionFetcher/Core (= 1.7.0)
   - SnapSDK/SCSDKCoreKit (1.14.0)
   - SnapSDK/SCSDKCreativeKit (1.14.0):
     - SnapSDK/SCSDKCoreKit
@@ -16,6 +53,8 @@ PODS:
 
 DEPENDENCIES:
   - FBSDKShareKit
+  - Google/SignIn
+  - GoogleAPIClientForREST/YouTube
   - SnapSDK/SCSDKCreativeKit
   - TikTokOpenSDK (~> 5.0.0)
 
@@ -23,15 +62,31 @@ SPEC REPOS:
   trunk:
     - FBSDKCoreKit
     - FBSDKShareKit
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - Google
+    - GoogleAPIClientForREST
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
     - SnapSDK
     - TikTokOpenSDK
 
 SPEC CHECKSUMS:
   FBSDKCoreKit: 0d1ae58388a458b8222f72025804cdc84eb5d0c3
   FBSDKShareKit: 70889c97c62f0c6b3ccb8b999e73a85f19024001
+  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
+  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
+  GoogleAPIClientForREST: 5183df28e7bcb7b7b41ebd558e16083cfed60d99
+  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
+  GoogleToolboxForMac: 8bef7c7c5cf7291c687cf5354f39f9db6399ad34
+  GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   SnapSDK: 1ced78c16c1263ef3f67458c90d4e9eb1be89bc6
   TikTokOpenSDK: a63564ea4dc1fabc56352bf7aa9ddc386cdb63b6
 
-PODFILE CHECKSUM: bd0a5874dbb88cb3cb62cced9deb7036541c2d8b
+PODFILE CHECKSUM: 5d24a38899b68fd1d0b161fe8aa5fca860a9912d
 
 COCOAPODS: 1.11.2

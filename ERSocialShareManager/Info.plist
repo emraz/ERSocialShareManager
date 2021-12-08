@@ -25,6 +25,14 @@
 				<string>aw4366r12bgdx5o8</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.940926917593-slp7npv0tddou9ju25fr20rc3mii1p0n</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
@@ -32,8 +40,6 @@
 	<string>239860421233621</string>
 	<key>FacebookDisplayName</key>
 	<string>ERSocialShareManager</string>
-	<key>SCSDKClientId</key>
-	<string>c1322ffa-67fd-4804-a5a2-c0ecbacc1f21</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>instagram</string>
@@ -64,6 +70,8 @@
 	<string>Need to save photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Please allow this app to access photo gallery. This permission need to edit your photo.</string>
+	<key>SCSDKClientId</key>
+	<string>c1322ffa-67fd-4804-a5a2-c0ecbacc1f21</string>
 	<key>TikTokAppID</key>
 	<string>aw4366r12bgdx5o8</string>
 	<key>UIApplicationSceneManifest</key>
