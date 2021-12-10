@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -129,7 +129,7 @@
         <!--Share to YouTube-->
         <scene sceneID="CGt-kC-NgC">
             <objects>
-                <viewController storyboardIdentifier="YouTubeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iFP-jL-A7I" customClass="YouTubeVC" customModule="ERSocialShareManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YouTubeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iFP-jL-A7I" customClass="ERYouTubeViewController" customModule="ERSocialShareManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pbb-zR-UyM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -138,10 +138,10 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKe-2b-q0Z" userLabel="subCV">
-                                        <rect key="frame" x="0.0" y="8" width="414" height="425.5"/>
+                                        <rect key="frame" x="16" y="8" width="382" height="425.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7z-2h-95s" userLabel="TitleView">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="149"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="149"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7f-kZ-tzK">
                                                         <rect key="frame" x="8" y="0.0" width="36.5" height="25"/>
@@ -149,14 +149,14 @@
                                                             <constraint firstAttribute="height" constant="25" id="8ca-mw-bVZ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Nazmul" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAR-mB-Ivj">
-                                                        <rect key="frame" x="8" y="33" width="398" height="108"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Title" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAR-mB-Ivj">
+                                                        <rect key="frame" x="8" y="33" width="366" height="108"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <color key="textColor" systemColor="labelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
@@ -171,7 +171,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajz-io-oc5" userLabel="DesCriptionView">
-                                                <rect key="frame" x="0.0" y="157" width="414" height="191.5"/>
+                                                <rect key="frame" x="0.0" y="157" width="382" height="191.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dx0-Wo-rO9">
                                                         <rect key="frame" x="8" y="0.0" width="100.5" height="25"/>
@@ -179,14 +179,14 @@
                                                             <constraint firstAttribute="height" constant="25" id="PpW-rC-Yy5"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="description" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y2v-Q4-nB5">
-                                                        <rect key="frame" x="8" y="33" width="398" height="150.5"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y2v-Q4-nB5">
+                                                        <rect key="frame" x="8" y="33" width="366" height="150.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <color key="textColor" systemColor="labelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
@@ -201,11 +201,19 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Uy-lo-lr4">
-                                                <rect key="frame" x="8" y="356.5" width="398" height="61"/>
-                                                <color key="backgroundColor" red="1" green="0.31372549020000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <rect key="frame" x="139" y="381.5" width="104" height="36"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="4" maxX="16" maxY="4"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="SHARE"/>
+                                                <state key="normal" title="Upload">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="tappedOnShareButton:" destination="iFP-jL-A7I" eventType="touchUpInside" id="TRc-yG-9Mg"/>
                                                 </connections>
@@ -213,8 +221,6 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="6Uy-lo-lr4" firstAttribute="leading" secondItem="eKe-2b-q0Z" secondAttribute="leading" constant="8" id="4rs-E8-flh"/>
-                                            <constraint firstAttribute="trailing" secondItem="6Uy-lo-lr4" secondAttribute="trailing" constant="8" id="624-Rb-Jg8"/>
                                             <constraint firstAttribute="trailing" secondItem="u7z-2h-95s" secondAttribute="trailing" id="ErH-I3-aWI"/>
                                             <constraint firstItem="Ajz-io-oc5" firstAttribute="height" secondItem="eKe-2b-q0Z" secondAttribute="height" multiplier="0.45" id="Hki-LD-SqY"/>
                                             <constraint firstAttribute="trailing" secondItem="Ajz-io-oc5" secondAttribute="trailing" id="KWX-PS-GZd"/>
@@ -222,8 +228,8 @@
                                             <constraint firstItem="u7z-2h-95s" firstAttribute="height" secondItem="eKe-2b-q0Z" secondAttribute="height" multiplier="0.35" id="d2P-3o-0wF"/>
                                             <constraint firstItem="Ajz-io-oc5" firstAttribute="leading" secondItem="eKe-2b-q0Z" secondAttribute="leading" id="eea-GD-3ge"/>
                                             <constraint firstAttribute="bottom" secondItem="6Uy-lo-lr4" secondAttribute="bottom" constant="8" id="erf-VZ-xcw"/>
+                                            <constraint firstItem="6Uy-lo-lr4" firstAttribute="centerX" secondItem="eKe-2b-q0Z" secondAttribute="centerX" id="lqE-BU-hxg"/>
                                             <constraint firstItem="u7z-2h-95s" firstAttribute="top" secondItem="eKe-2b-q0Z" secondAttribute="top" id="vg4-9G-Efh"/>
-                                            <constraint firstItem="6Uy-lo-lr4" firstAttribute="top" secondItem="Ajz-io-oc5" secondAttribute="bottom" constant="8" id="vkL-w0-4UN"/>
                                             <constraint firstItem="Ajz-io-oc5" firstAttribute="top" secondItem="u7z-2h-95s" secondAttribute="bottom" constant="8" id="wpK-OJ-pUC"/>
                                         </constraints>
                                     </view>
@@ -232,8 +238,8 @@
                                 <constraints>
                                     <constraint firstItem="eKe-2b-q0Z" firstAttribute="height" secondItem="USs-Fi-ia4" secondAttribute="height" multiplier="0.55" id="DTM-Hu-UjZ"/>
                                     <constraint firstItem="eKe-2b-q0Z" firstAttribute="top" secondItem="USs-Fi-ia4" secondAttribute="top" constant="8" id="KYc-MK-b5C"/>
-                                    <constraint firstAttribute="trailing" secondItem="eKe-2b-q0Z" secondAttribute="trailing" id="daC-pn-CuS"/>
-                                    <constraint firstItem="eKe-2b-q0Z" firstAttribute="leading" secondItem="USs-Fi-ia4" secondAttribute="leading" id="lc5-Gi-ldT"/>
+                                    <constraint firstAttribute="trailing" secondItem="eKe-2b-q0Z" secondAttribute="trailing" constant="16" id="daC-pn-CuS"/>
+                                    <constraint firstItem="eKe-2b-q0Z" firstAttribute="leading" secondItem="USs-Fi-ia4" secondAttribute="leading" constant="16" id="lc5-Gi-ldT"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -247,9 +253,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Share to YouTube" id="lAy-R5-N7s">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CK1-J8-wWg">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="CK1-J8-wWg">
                             <connections>
                                 <action selector="tappedOnCancelButton:" destination="iFP-jL-A7I" id="gVK-w2-21K"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Upload" id="qkB-kB-S8M">
+                            <connections>
+                                <action selector="didPressUploadButton:" destination="iFP-jL-A7I" id="uVz-s6-DEs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -266,7 +277,7 @@
         <!--Navigation Controller-->
         <scene sceneID="nQl-Qm-SNv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="edL-nT-RFS" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navYouTubeVC" automaticallyAdjustsScrollViewInsets="NO" id="edL-nT-RFS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="waX-Rm-uYb">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

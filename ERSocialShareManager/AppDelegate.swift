@@ -28,7 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TikTokOpenSDKLogDelegate 
         TikTokOpenSDKApplicationDelegate.sharedInstance().logDelegate = self
         TikTokOpenSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        GIDSignIn.sharedInstance().clientID = "940926917593-slp7npv0tddou9ju25fr20rc3mii1p0n.apps.googleusercontent.com"
+        // Initialize Google sign-in.
+        GIDSignIn.sharedInstance().clientID = "731823158921-gqfqravntnu6m29s4pca88nqssjs6bhc.apps.googleusercontent.com"
         
         return true
     }
@@ -44,6 +45,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TikTokOpenSDKLogDelegate 
         if TikTokOpenSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: sourceApplication, annotation: annotation) {
             return true
         }
+        
+        if GIDSignIn.sharedInstance().handle(url,
+                                             sourceApplication: sourceApplication,
+                                             annotation: annotation) {
+            return true
+        }
+        
         return false
     }
 

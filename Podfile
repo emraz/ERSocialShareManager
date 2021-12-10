@@ -11,7 +11,7 @@ target 'ERSocialShareManager' do
     pod 'SnapSDK', :subspecs => ['SCSDKCreativeKit']
     pod 'GoogleAPIClientForREST/YouTube'
     pod 'Google/SignIn'
-
+    
   target 'ERSocialShareManagerTests' do
     inherit! :search_paths
     # Pods for testing

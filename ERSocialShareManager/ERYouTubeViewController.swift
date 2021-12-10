@@ -8,10 +8,8 @@
 import UIKit
 import GoogleSignIn
 import GoogleAPIClientForREST
-import GoogleSignIn
-import GTMSessionFetcher
 
-class YouTubeVC: UIViewController {
+class ERYouTubeViewController: UIViewController {
     
     @IBOutlet weak var titleTextView: UITextView!
     @IBOutlet weak var descriptionTextView: UITextView!
@@ -23,8 +21,6 @@ class YouTubeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         titleTextView.text = ""
         titleTextView.layer.borderWidth = 1
         titleTextView.layer.borderColor = UIColor.gray.cgColor
@@ -34,7 +30,6 @@ class YouTubeVC: UIViewController {
         let firstString = "Created By ERSocialShareManager"
         let secondString = "https://matrixsolution.xyz/"
         descriptionTextView.text = firstString + "\n" + secondString
-        //GIDSignIn.sharedInstance().cu
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +42,10 @@ class YouTubeVC: UIViewController {
     }
     
     @IBAction func tappedOnShareButton(_ sender: UIButton) {
+        self.uploadVideoOnYoutube()
+    }
+    
+    @IBAction func didPressUploadButton(_ sender: UIBarButtonItem) {
         self.uploadVideoOnYoutube()
     }
     
@@ -79,11 +78,11 @@ class YouTubeVC: UIViewController {
         self.service.executeQuery(query, completionHandler: { (ticket, anyobject, error) in
             if error == nil {
                 if let videoObject = anyobject as? GTLRYouTube_Video {
-                    //print(videoObject.identifier ?? "upload")
+                    print(videoObject.identifier ?? "upload")
                     print("SuccessFullYUpload")
                 }
             } else {
-                print(error?.localizedDescription)
+                print(error?.localizedDescription ?? "Error")
             }
         })
     }
