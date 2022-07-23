@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didPressMediaTypeSwitch(_ sender: UISwitch) {
+        AppManager.shared.lastSavedObjectPhassetIndentifier = ""
         isVideo = sender.isOn
     }
     

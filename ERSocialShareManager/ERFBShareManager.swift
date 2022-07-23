@@ -15,12 +15,24 @@ class ERFBShareManager: NSObject {
     
     class func shareVideoToFacebook(videoPath: String, isMessenger: Bool) {
         ERFBShareManager.isMessenger = isMessenger
-        
-        if UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(videoPath) {
-            UISaveVideoAtPathToSavedPhotosAlbum(videoPath, self, #selector(video(_:didFinishSavingWithError:contextInfo:)), nil)
+       
+        if AppManager.shared.lastSavedObjectPhassetIndentifier.isEmpty {
+            if UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(videoPath) {
+                UISaveVideoAtPathToSavedPhotosAlbum(videoPath, self, #selector(video(_:didFinishSavingWithError:contextInfo:)), nil)
+            }
+            else {
+                print("Video is not eligiable to save this path")
+            }
         }
-        else {
-            print("Video is not eligiable to save this path")
+        else{
+            let assets = PHAsset.fetchAssets(withLocalIdentifiers: [AppManager.shared.lastSavedObjectPhassetIndentifier], options: nil)
+            if let asset = assets.firstObject{
+                ERFBShareManager.shareToFBWithPhasset(phasset: asset)
+            }
+            else{
+                AppManager.shared.lastSavedObjectPhassetIndentifier = ""
+                ERFBShareManager.shareVideoToFacebook(videoPath: videoPath, isMessenger: isMessenger)
+            }
         }
     }
     
@@ -46,10 +58,15 @@ class ERFBShareManager: NSObject {
         let fetchResult = PHAsset.fetchAssets(with: .video, options: fetchOptions)
 
         if let lastAsset = fetchResult.lastObject {
-            let content = getVideoContentforFB(videoAsset: lastAsset)
-            
-            ERFBShareManager.isMessenger ? shareInMessenger(content: content): shareInFacebook(content: content)
+            AppManager.shared.lastSavedObjectPhassetIndentifier =  lastAsset.localIdentifier
+            ERFBShareManager.shareToFBWithPhasset(phasset: lastAsset)
         }
+    }
+    
+    private class func shareToFBWithPhasset(phasset: PHAsset){
+        let content = getVideoContentforFB(videoAsset: phasset)
+        
+        ERFBShareManager.isMessenger ? shareInMessenger(content: content): shareInFacebook(content: content)
     }
     
     class func getPhotoContentforFB(image: UIImage) -> SharingContent {
